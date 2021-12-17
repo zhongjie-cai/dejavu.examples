@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{178215A1-7ACE-42C8-98E9-DCB576FD2BB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dejavu", "dejavu\dejavu.csproj", "{59DF969D-E36A-41A6-8330-2E641A7F80A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{211645A5-60C0-478C-BD53-A27E5F965A0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{178215A1-7ACE-42C8-98E9-DCB576FD2BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{178215A1-7ACE-42C8-98E9-DCB576FD2BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{178215A1-7ACE-42C8-98E9-DCB576FD2BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{178215A1-7ACE-42C8-98E9-DCB576FD2BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DF969D-E36A-41A6-8330-2E641A7F80A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DF969D-E36A-41A6-8330-2E641A7F80A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DF969D-E36A-41A6-8330-2E641A7F80A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DF969D-E36A-41A6-8330-2E641A7F80A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211645A5-60C0-478C-BD53-A27E5F965A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211645A5-60C0-478C-BD53-A27E5F965A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211645A5-60C0-478C-BD53-A27E5F965A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211645A5-60C0-478C-BD53-A27E5F965A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A3E4888-7242-46BC-AD35-EAA5DBFCB389}
+	EndGlobalSection
+EndGlobal
