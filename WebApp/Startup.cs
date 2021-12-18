@@ -2,7 +2,6 @@ using Castle.Windsor;
 using Castle.MicroKernel.Registration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Dejavu;
@@ -20,7 +19,7 @@ namespace WebApp
 
         public void ConfigureContainer(IWindsorContainer container)
         {
-            InterceptorConfiguration.ConfigureFor<HttpContextProvider, JsonObjectSerializer>(container, typeof(IAct));
+            InterceptorConfiguration.ConfigureFor<HttpContextProvider, JsonObjectSerializer>(container);
 
             container.Register(Component.For<IAct>().ImplementedBy<RandomActor>().LifestyleSingleton());
         }
