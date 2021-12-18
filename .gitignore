@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+ConsoleApp/Properties/launchSettings.json
+WebApp/Properties/launchSettings.json
