@@ -49,14 +49,15 @@ namespace ConsoleApp
             return dummyConfiguration;
         }
 
-        private static IManageWeatherForecast Init(IConfiguration configuration)
+        private static IExampleManager Init(IConfiguration configuration)
         {
             InterceptorConfiguration.ConfigureFor<FileContextProvider, JsonObjectSerializer>(_container);
-            _container.Register(Component.For<IAct>().ImplementedBy<RandomActor>().LifestyleSingleton());
-            _container.Register(Component.For<IManageWeatherForecast>().ImplementedBy<WeatherForecastManager>().LifestyleSingleton());
+            _container.Register(Component.For<IRandomNumber>().ImplementedBy<RandomNumber>().LifestyleSingleton());
+            _container.Register(Component.For<IRandomActor>().ImplementedBy<RandomActor>().LifestyleSingleton());
+            _container.Register(Component.For<IExampleManager>().ImplementedBy<ExampleManager>().LifestyleSingleton());
             _container.Register(Component.For<ILogger>().ImplementedBy<DummyLogger>().LifestyleSingleton());
             _container.Register(Component.For<IConfiguration>().Instance(configuration));
-            return _container.Resolve<IManageWeatherForecast>();
+            return _container.Resolve<IExampleManager>();
         }
     }
 }

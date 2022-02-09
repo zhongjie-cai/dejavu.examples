@@ -21,7 +21,8 @@ namespace WebApp
         {
             InterceptorConfiguration.ConfigureFor<HttpContextProvider, JsonObjectSerializer>(container);
 
-            container.Register(Component.For<IAct>().ImplementedBy<RandomActor>().LifestyleSingleton());
+            container.Register(Component.For<IRandomActor>().ImplementedBy<RandomActor>().LifestyleSingleton());
+            container.Register(Component.For<IRandomNumber>().ImplementedBy<RandomNumber>().LifestyleSingleton());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
