@@ -28,11 +28,11 @@ namespace ConsoleApp
             {
                 if (args[0] == "r")
                 {
-                    dummyConfiguration["dcir"] = "test_data.json";
+                    dummyConfiguration["dcir"] = "test_data";
                 }
                 else if (args[0] == "p")
                 {
-                    dummyConfiguration["dcip"] = "test_data.json";
+                    dummyConfiguration["dcip"] = "test_data";
                 }
             }
             else if (args.Length == 2)
